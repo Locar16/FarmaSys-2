@@ -1,4 +1,9 @@
+import sys
+
 def main():
-    print("Hello World")
+    if len(sys.argv) > 1:
+        print("Olá, ", sys.argv[1] + '!')
+    else:
+        print("Olá mundo!")
 if __name__ == "__main__":
     main()
